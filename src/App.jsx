@@ -1,4 +1,24 @@
-import { useState } from 'react'
+import './App.css'
+import ExpenseItem from './assets/expenseItem'
+
+const App = () => {
+
+  const date = new Date(2024, 1, 16)
+  const title = 'New Book'
+  const price = 30.99
+
+  return(
+  <div className="App">
+    <ExpenseItem
+    data={data}
+    />
+  </div>
+  )
+}
+
+export default App
+
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -32,4 +52,4 @@ function App() {
   )
 }
 
-export default App
+export default App*/
