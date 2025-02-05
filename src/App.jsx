@@ -2,16 +2,23 @@ import './App.css'
 import ExpenseItem from './assets/expenseItem'
 
 const App = () => {
-
-  const date = new Date(2024, 1, 16)
-  const title = 'New Book'
-  const price = 30.99
+const expenses = [
+  {
+    date: new Date(2024, 1, 16),
+    title: 'New Book',
+    price: 30.99
+  },
+  {
+    date: new Date(2024, 1, 16),
+    title: 'New Stuff',
+    price: 99.99
+  }
+]
 
   return(
   <div className="App">
-    <ExpenseItem
-    data={data}
-    />
+    <ExpenseItem data={expenses[0]}/>
+    <ExpenseItem data={expenses[1]}/>
   </div>
   )
 }
