@@ -1,0 +1,17 @@
+.expenses-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.expenses-filter label {
+    font-weight: bold;
+}
+
+.expenses-filter select {
+    padding: 0.5rem;
+    font: inherit;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
